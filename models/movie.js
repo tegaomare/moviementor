@@ -11,6 +11,10 @@ Movie.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    title: {
+      type: DataTypes.NVARCHAR(60),
+      allowNull: false,
+    },
   },
   {
     sequelize,
