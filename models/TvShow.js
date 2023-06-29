@@ -40,6 +40,16 @@ TvShow.init(
         },
         language: {
             type: DataTypes.INTEGER,
-        }
+        },
+        category_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'category',
+                key: 'id',
+            },
+        },
+    },
+    {
+        sequelize,
     }
 )
