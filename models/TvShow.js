@@ -15,19 +15,12 @@ TvShow.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        genre: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
         description: {
             type: DataTypes.STRING,
         },
         num_of_seasons: {
             type: DataTypes.INTEGER,
             allowNull: false,
-        },
-        rating: {
-            type: DataTypes.STRING,
         },
         image: {
             // need to figure this out
@@ -48,6 +41,19 @@ TvShow.init(
                 key: 'id',
             },
         },
+        genre_id: {
+            type: DataTypes.STRING,
+            references: {
+                model: 'genre',
+                id: 'id',
+            }
+        },
+        rating_id: {
+            type: DataTypes.STRING,
+            references: {
+                model: 
+            }
+        }
     },
     {
         sequelize,
