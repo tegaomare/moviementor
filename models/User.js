@@ -10,4 +10,8 @@ User.init({
     primaryKey: true,
     autoIncrement: true,
   },
+  usnername: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
 });
