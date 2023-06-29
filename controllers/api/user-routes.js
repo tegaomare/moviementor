@@ -28,8 +28,44 @@ router.post("/", async (req, res) => {
 
 // POST user login route
 // POST /api/users/login
+router.post("/login", async (req, res) => {
+  try {
+    const userData = await User.findOne({ where: { email: req.body.email } });
+    if (!userData) {
+      res
+        .status(400)
+        .json({ message: "Incorrect email or password, please try again." });
+      return;
+    }
+
+    const validPassword = await userData.checkPassword(req.body.password);
+    if (!validPassword) {
+      res
+        .status(400)
+        .json({ message: "Incorrect email or password, please try again." });
+    }
+  } catch (error) {
+    res.status(400).json(error);
+  }
+});
 
 // PUT update a user
 // PUT /api/users/:id
+router.put("/:id", async (req, res) => {
+  try {
+    const userData = await User.update(req.body, {
+      where: {
+        id: req.params.id,
+      },
+    });
+    if (!userData[0]) {
+      res.status(404).json({ message: "No user with this id!" });
+      return;
+    }
+    res.status(200).json(userData);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+});
 
 module.exports = router;
