@@ -5,7 +5,7 @@ const User = require("../../models/User.js");
 // GET /api/users/:id
 router.get("./:id", async (req, res) => {
   try {
-    const userData = await User.findByPk(req.params);
+    const userData = await User.findByPk(req.params.id);
     if (!userData) {
       res.status(404).json({ message: "No user with this id!" });
     }
@@ -22,7 +22,7 @@ router.post("/", async (req, res) => {
     const userData = await User.create(req.body);
     res.status(200).json(userData);
   } catch (error) {
-    res.status(500).json(error);
+    res.status(400).json(error);
   }
 });
 
