@@ -28,7 +28,18 @@ TvShow.init(
         },
         rating: {
             type: DataTypes.STRING,
-            
+        },
+        image: {
+            // need to figure this out
+        },
+        sex: {
+            type: DataTypes.INTEGER,
+        },
+        violence: {
+            type: DataTypes.INTEGER,
+        },
+        language: {
+            type: DataTypes.INTEGER,
         }
     }
 )
