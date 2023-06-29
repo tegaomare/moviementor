@@ -58,7 +58,8 @@ Movie.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: "gallery",
+    timestamps: false,
+    modelName: "movie",
   }
 );
 
