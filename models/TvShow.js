@@ -59,3 +59,4 @@ TvShow.init(
     }
 );
 
+module.exports = TvShow;
