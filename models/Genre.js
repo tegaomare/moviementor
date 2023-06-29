@@ -12,7 +12,7 @@ Genre.init(
             autoIncrement: true,
         },
         genre: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             allowNull: false,
         },
     },
@@ -21,6 +21,8 @@ Genre.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'user',
+        modelName: 'genre',
     }
-)
+);
+
+module.exports = Genre;
