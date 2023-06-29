@@ -22,9 +22,9 @@ TvShow.init(
             type: DataTypes.INTEGER,
             allowNull: false,
         },
-        image: {
-            // need to figure this out
-        },
+        // image: {
+        //     // need to figure this out
+        // },
         sex: {
             type: DataTypes.INTEGER,
         },
@@ -45,15 +45,16 @@ TvShow.init(
             type: DataTypes.STRING,
             references: {
                 model: 'genre',
-                id: 'id',
+                key: 'id',
             }
         },
         rating_id: {
             type: DataTypes.STRING,
             references: {
-                model: 
+                model: 'rating',
+                key: 'id',
             }
-        }
+        },
     },
     {
         sequelize,
