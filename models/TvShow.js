@@ -27,12 +27,15 @@ TvShow.init(
         // },
         sex: {
             type: DataTypes.INTEGER,
+            allowNull: false,
         },
         violence: {
             type: DataTypes.INTEGER,
+            allowNull: false,
         },
         language: {
             type: DataTypes.INTEGER,
+            allowNull: false,
         },
         category_id: {
             type: DataTypes.INTEGER,
