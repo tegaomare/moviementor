@@ -38,6 +38,10 @@ Movie.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    violence_rating: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
   },
   {
     sequelize,
