@@ -26,12 +26,16 @@ Movie.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
-    rating: {
-      type: DataTypes.FLOAT,
-      allowNull: false,
+    rating_id: {
+      type: DataTypes.STRING,
+      references: {
+        model: "rating",
+        key: "id",
+      },
     },
+
     sex_rating: {
-      type: DataTypes.FLOAT,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
   },
