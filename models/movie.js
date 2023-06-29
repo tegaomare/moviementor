@@ -12,7 +12,7 @@ Movie.init(
       autoIncrement: true,
     },
     title: {
-      type: DataTypes.NVARCHAR(60),
+      type: DataTypes.STRING,
       allowNull: false,
     },
   },
