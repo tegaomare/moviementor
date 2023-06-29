@@ -12,7 +12,8 @@ Genre.init(
             autoIncrement: true,
         },
         genre: {
-            
+            type: DataTypes.INTEGER,
+            allowNull: false,
         }
     }
 )
