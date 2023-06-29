@@ -14,6 +14,13 @@ Genre.init(
         genre: {
             type: DataTypes.INTEGER,
             allowNull: false,
-        }
+        },
+    },
+    {
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'user',
     }
 )
