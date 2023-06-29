@@ -23,6 +23,10 @@ Movie.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
+    rating: {
+      type: DataTypes.FLOAT,
+      allowNull: false,
+    },
   },
   {
     sequelize,
