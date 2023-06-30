@@ -30,7 +30,7 @@ TvShow.hasOne(Rating, {
     foreignKey: "tvshow_id",
     onDelete: "CASCADE"
 })*/
-
+/*
 //movie belongs to category
 Movie.belongsTo(Category, {
   foreignKey: "category_id",
@@ -48,18 +48,18 @@ Category.belongsToMany(Movie, {
 Category.belongsToMany(TvShow, {
   as: "tvshows_categories",
 });
-
+*/
 //MANY TO MANY
 //movie belongs to many users - USERS MOVIES
 //make usersMovies model that has two foreign keys in it and go "through"
-Movie.belongsToMany(User, {
+/*Movie.belongsToMany(User, {
   as: "users_movies",
-});
+});*/
 //tv show belongs to many users - USERS TV SHOWS
 //make usersTvshows model
-TvShow.belongsToMany(User, {
+/*TvShow.belongsToMany(User, {
   as: "users_tvshows",
-});
+});*/
 
 module.exports = { User, Category, Movie, TvShow };
 // Genre, Rating };
