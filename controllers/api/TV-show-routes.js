@@ -15,4 +15,18 @@ router.get("/", async (req, res) => {
   }
 });
 
+// GET tv-shows by id
+// GET /api/tv-shows/:id
+router.get("/:id", async (req, res) => {
+  try {
+    const tvShowData = Movie.findByPk();
+    if (!tvShowData) {
+      return res.status(404).json({ message: "No movies with this id!" });
+    }
+    res.status(200).json(tvShowData);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+});
+
 module.exports = router;
