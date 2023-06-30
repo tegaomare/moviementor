@@ -13,6 +13,11 @@ const seedDatabase = async () => {
       returning: true,
     });
 
+    await movieData();
+
+    await tvshowData();
+
+    process.exit(0);
 };
 
-dummyseedDatabase();
+seedDatabase();
