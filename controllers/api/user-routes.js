@@ -3,6 +3,19 @@ const User = require("../../models/User.js");
 
 // GET all users
 // GET /api/users
+router.get("/", async (req, res) => {
+  try {
+    const userData = await User.findAll();
+    if (!userData) {
+      return res
+        .status(404)
+        .json({ message: "No users currently in the database!" });
+    }
+    res.status(200).json(userData);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+});
 
 // GET one user
 // GET /api/users/:id
