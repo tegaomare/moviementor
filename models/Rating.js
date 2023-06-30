@@ -19,6 +19,20 @@ Rating.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        movie_id: {
+            type: DataTypes.INTEGER,
+            references: {
+            model: "movie",
+            key: "id",
+            },
+        },
+        tvshow_id: {
+            type: DataTypes.INTEGER,
+            references: {
+            model: "tvshow",
+            key: "id",
+            },
+        },
     },
     {
         sequelize,

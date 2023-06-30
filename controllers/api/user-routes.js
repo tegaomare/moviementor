@@ -3,6 +3,19 @@ const User = require("../../models/User.js");
 
 // GET all users
 // GET /api/users
+router.get("/", async (req, res) => {
+  try {
+    const userData = await User.findAll();
+    if (!userData) {
+      return res
+        .status(404)
+        .json({ message: "No users currently in the database!" });
+    }
+    res.status(200).json(userData);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+});
 
 // GET one user
 // GET /api/users/:id
@@ -21,14 +34,8 @@ router.get("/:id", async (req, res) => {
 // POST create a new user
 // POST /api/users
 router.post("/", async (req, res) => {
-  console.log("IS THIS RUNNING??");
-  console.log(req.body);
   try {
     const userData = await User.create(req.body);
-    console.log(
-      "🚀 ~ file: user-routes.js:23 ~ router.post ~ userData:",
-      userData
-    );
     res.status(200).json(userData);
   } catch (error) {
     res.status(400).json(error);
@@ -53,6 +60,7 @@ router.post("/login", async (req, res) => {
         .status(400)
         .json({ message: "Incorrect email or password, please try again." });
     }
+    res.status(200).json({ message: "login!!" });
   } catch (error) {
     res.status(400).json(error);
   }
