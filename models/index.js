@@ -1,9 +1,9 @@
-const User = require('./User');
-const Category = require('./Category');
-const Movie = require('./Movie');
-const TvShow = require('./TvShow');
-const Genre = require('./Genre');
-const Rating = require('./Rating');
+const User = require("./User");
+const Category = require("./Category");
+const Movie = require("./Movie");
+const TvShow = require("./TvShow");
+const Genre = require("./Genre");
+const Rating = require("./Rating");
 
 // NEED ASSOCIATIONS
 
@@ -34,11 +34,4 @@ Movie.belongsToMany(User, {
 TvShow.belongsToMany(User, {
     as: 'users_tvshows'
 })
-
-
-
-
-
-
-
-module.exports = { User, Category, Movie, TvShow, Genre, Rating}
+module.exports = { User, Category, Movie, TvShow, Genre, Rating };

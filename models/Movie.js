@@ -16,7 +16,7 @@ Movie.init(
       allowNull: false,
     },
     genre_id: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       references: {
         model: "genre",
         key: "id",
@@ -27,7 +27,7 @@ Movie.init(
       allowNull: false,
     },
     rating_id: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       references: {
         model: "rating",
         key: "id",
