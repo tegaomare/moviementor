@@ -1,5 +1,5 @@
 const router = require("express").Router();
-
+const { Movie } = require("../models");
 router.get("/homepage", async (req, res) => {
   res.render("homepage");
 });
