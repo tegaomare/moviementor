@@ -10,17 +10,31 @@ const Rating = require('./Rating');
 //genre has many movies
 //genre has many tvshows
 
-//rating has many movies
-//rating has many tvshows
+//Movie has one rating
+Movie.hasOne(Rating, {
+    foreignKey: "movie_id",
+    onDelete: "CASCADE"
+})
+//Tv show has one rating
+TvShow.hasOne(Rating, {
+    foreignKey: "tvshow_id",
+    onDelete: "CASCADE"
+})
 
-//category has many movies
-//category has many tvshows
 
 //movie belongs to category
 //tvshow belongs to category
 
-//user has many movies
-//user has many tv shows
+//MANY TO MANY
+//movie belongs to many users - USERS MOVIES
+Movie.belongsToMany(User, {
+    as: 'users_movies'
+})
+//tv show belongs to many users - USERS TV SHOWS
+TvShow.belongsToMany(User, {
+    as: 'users_tvshows'
+})
+
 
 
 
