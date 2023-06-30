@@ -34,14 +34,8 @@ router.get("/:id", async (req, res) => {
 // POST create a new user
 // POST /api/users
 router.post("/", async (req, res) => {
-  console.log("IS THIS RUNNING??");
-  console.log(req.body);
   try {
     const userData = await User.create(req.body);
-    console.log(
-      "🚀 ~ file: user-routes.js:23 ~ router.post ~ userData:",
-      userData
-    );
     res.status(200).json(userData);
   } catch (error) {
     res.status(400).json(error);
