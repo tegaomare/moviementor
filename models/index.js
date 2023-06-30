@@ -3,7 +3,7 @@ const Category = require("./Category");
 const Movie = require("./Movie");
 const TvShow = require("./TvShow");
 // const Genre = require("./Genre");
-// const Rating = require("./Rating");
+//const Rating = require("./Rating");
 
 //category means movie or tv show - only 2 categories
 
@@ -19,10 +19,9 @@ const TvShow = require("./TvShow");
 //     foreignKey: "genre_id",
 //     onDelete: "CASCADE",
 //   });
-  
 
 //Movie has one rating
-Movie.hasOne(Rating, {
+/*Movie.hasOne(Rating, {
     foreignKey: "movie_id",
     onDelete: "CASCADE"
 })
@@ -30,39 +29,37 @@ Movie.hasOne(Rating, {
 TvShow.hasOne(Rating, {
     foreignKey: "tvshow_id",
     onDelete: "CASCADE"
-})
-
+})*/
 
 //movie belongs to category
 Movie.belongsTo(Category, {
-    foreignKey: "category_id",
-  });
+  foreignKey: "category_id",
+});
 
 //tvshow belongs to category
 TvShow.belongsTo(Category, {
-    foreignKey: "category_id",
-  });
+  foreignKey: "category_id",
+});
 
 Category.belongsToMany(Movie, {
-    as: 'movies_categories'
-})
+  as: "movies_categories",
+});
 
 Category.belongsToMany(TvShow, {
-    as: 'tvshows_categories'
-})
+  as: "tvshows_categories",
+});
 
 //MANY TO MANY
 //movie belongs to many users - USERS MOVIES
 //make usersMovies model that has two foreign keys in it and go "through"
 Movie.belongsToMany(User, {
-    as: 'users_movies'
-})
+  as: "users_movies",
+});
 //tv show belongs to many users - USERS TV SHOWS
 //make usersTvshows model
 TvShow.belongsToMany(User, {
-    as: 'users_tvshows'
-})
-
+  as: "users_tvshows",
+});
 
 module.exports = { User, Category, Movie, TvShow };
-    // Genre, Rating };
+// Genre, Rating };
