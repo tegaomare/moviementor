@@ -15,12 +15,22 @@ Movie.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-   
+   release_date: {
+    type: DataTypes.STRING,
+    allowNull: false,
+   },
+   poster: {
+    type: DataTypes.STRING,
+    allowNull: false,
+   },
+   adult_content: {
+    type: DataTypes.BOOLEAN,
+    allowNull: false,
+   },
     description: {
       type: DataTypes.TEXT,
       allowNull: false,
     },
-   
   
   
   },
