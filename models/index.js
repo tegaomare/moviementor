@@ -1,9 +1,5 @@
 const User = require("./User");
-const Category = require("./Category");
 const Movie = require("./Movie");
-const TvShow = require("./TvShow");
-const Genre = require("./Genre");
-const Rating = require("./Rating");
 
 //category means movie or tv show - only 2 categories
 
@@ -61,5 +57,5 @@ Category.belongsToMany(TvShow, {
   as: "users_tvshows",
 });*/
 
-module.exports = { User, Category, Genre, Rating, Movie, TvShow };
-// Genre, Rating };
+module.exports = { User,  Movie,};
+
