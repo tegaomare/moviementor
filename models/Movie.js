@@ -15,13 +15,7 @@ Movie.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    genre_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "genre",
-        key: "id",
-      },
-    },
+   
     description: {
       type: DataTypes.TEXT,
       allowNull: false,
