@@ -42,11 +42,7 @@ Movie.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    language: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
- 
+  
   },
   {
     sequelize,
