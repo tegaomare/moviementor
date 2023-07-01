@@ -34,10 +34,7 @@ Movie.init(
       },
     },
 
-    sex_rating: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
+  
   
   
   },
