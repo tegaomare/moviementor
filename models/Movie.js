@@ -26,15 +26,7 @@ Movie.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
-    rating_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "rating",
-        key: "id",
-      },
-    },
-
-  
+   
   
   
   },
