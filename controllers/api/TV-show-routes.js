@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const TvShow = require("../../models/TvShow");
+//const TvShow = require("../../models/TvShow");
 
 // GET all tv shows
 // GET /api/tv-shows
