@@ -31,8 +31,6 @@ Movie.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
-  
-  
   },
   {
     sequelize,
