@@ -15,43 +15,21 @@ Movie.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    genre_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "genre",
-        key: "id",
-      },
-    },
+   release_date: {
+    type: DataTypes.STRING,
+    allowNull: false,
+   },
+   poster: {
+    type: DataTypes.STRING,
+    allowNull: false,
+   },
+   adult_content: {
+    type: DataTypes.BOOLEAN,
+    allowNull: false,
+   },
     description: {
       type: DataTypes.TEXT,
       allowNull: false,
-    },
-    rating_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "rating",
-        key: "id",
-      },
-    },
-
-    sex_rating: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    violence_rating: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    language: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    category_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "category",
-        key: "id",
-      },
     },
   },
   {
