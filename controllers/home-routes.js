@@ -1,7 +1,8 @@
 const router = require("express").Router();
 const { Movie } = require("../models");
+const withAuth = require("../../utils/auth.js")
 
-router.get("/", async (req, res) => {
+router.get("/", withAuth, async (req, res) => {
   res.render("homepage");
 });
 
