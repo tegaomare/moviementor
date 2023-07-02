@@ -3,7 +3,14 @@ const { Movie } = require("../models");
 const withAuth = require("../../utils/auth.js");
 
 router.get("/", withAuth, async (req, res) => {
-  res.render("homepage");
+  const dbMovieData = await Movie.findAll();
+
+  const movies = dbMovieData.map((movie) => movie.get({ plain: true }));
+
+  res.render("homepage", {
+    movies,
+    loggedIn: req.session.loggedIn,
+  });
 });
 
 router.get("/login", async (req, res) => {
