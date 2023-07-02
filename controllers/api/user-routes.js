@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const User = require("../../models/User.js");
-const withAuth = require("../../")
+//const withAuth = require("../../utils/auth.js")
 
 // GET all users
 // GET /api/users
@@ -96,5 +96,17 @@ router.put("/:id", async (req, res) => {
     res.status(500).json(error);
   }
 });
+
+//POST logout
+router.post('/logout', (req, res) => {
+  if (req.session.loggedIn) {
+    req.session.destroy(() => {
+      res.status(204).end();
+    });
+  } else {
+    res.status(404).end();
+  }
+});
+
 
 module.exports = router;
