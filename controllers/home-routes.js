@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { Movie } = require("../models");
-const withAuth = require("../../utils/auth.js");
+const withAuth = require("../utils/auth");
 
 router.get("/", withAuth, async (req, res) => {
   const dbMovieData = await Movie.findAll();
