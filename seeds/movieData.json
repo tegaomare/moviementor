@@ -70,18 +70,18 @@
         "description": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure."
     },
     {
+        "title": "Nimona",
+        "release_date": "2023-06-23",
+        "poster": "/2NQljeavtfl22207D1kxLpa4LS3.jpg",
+        "adult_content": false,
+        "description": "A knight framed for a tragic crime teams with a scrappy, shape-shifting teen to prove his innocence. But what if she's the monster he's sworn to destroy?"
+    },
+    {
         "title": "Transformers: Rise of the Beasts",
         "release_date": "2023-06-06",
         "poster": "/gPbM0MK8CP8A174rmUwGsADNYKD.jpg",
         "adult_content": false,
         "description": "When a new threat capable of destroying the entire planet emerges, Optimus Prime and the Autobots must team up with a powerful faction known as the Maximals. With the fate of humanity hanging in the balance, humans Noah and Elena will do whatever it takes to help the Transformers as they engage in the ultimate battle to save Earth."
-    },
-    {
-        "title": "Nimona",
-        "release_date": "2023-06-23",
-        "poster": "/8havBo9m3vZvj5XbJffcrmpgjnx.jpg",
-        "adult_content": false,
-        "description": "A knight framed for a tragic crime teams with a scrappy, shape-shifting teen to prove his innocence. But what if she's the monster he's sworn to destroy?"
     },
     {
         "title": "Guy Ritchie's The Covenant",
@@ -119,13 +119,6 @@
         "description": "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them."
     },
     {
-        "title": "Kandahar",
-        "release_date": "2023-05-25",
-        "poster": "/lCanGgsqF4xD2WA5NF8PWeT3IXd.jpg",
-        "adult_content": false,
-        "description": "After his mission is exposed, an undercover CIA operative stuck deep in hostile territory in Afghanistan must fight his way out, alongside his Afghan translator, to an extraction point in Kandahar, all whilst avoiding elite enemy forces and foreign spies tasked with hunting them down."
-    },
-    {
         "title": "Extraction",
         "release_date": "2020-04-24",
         "poster": "/nygOUcBKPHFTbxsYRFZVePqgPK6.jpg",
@@ -138,5 +131,12 @@
         "poster": "/cgYg04miVQUAG2FKk3amSnnHzOp.jpg",
         "adult_content": false,
         "description": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans."
+    },
+    {
+        "title": "Kandahar",
+        "release_date": "2023-05-25",
+        "poster": "/lCanGgsqF4xD2WA5NF8PWeT3IXd.jpg",
+        "adult_content": false,
+        "description": "After his mission is exposed, an undercover CIA operative stuck deep in hostile territory in Afghanistan must fight his way out, alongside his Afghan translator, to an extraction point in Kandahar, all whilst avoiding elite enemy forces and foreign spies tasked with hunting them down."
     }
 ]
