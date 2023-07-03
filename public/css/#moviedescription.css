@@ -8,7 +8,7 @@ body {
     font-family: 'Courier New';
     margin: 0;
 }
-.main-header {
+.navbar-brand {
     display: flex;
     flex-direction: column;
     justify-content: space-between;

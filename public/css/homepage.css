@@ -4,11 +4,36 @@
 
 }
 
+element.style {
+    background-color: #212529;
+}
+
+//email-login
+element.style {
+    color: #FF00E4;
+}
+
+//password login
+element.style {
+    color: #FF00E4;
+}
+
+//username signup
+
+element.style {
+    color: #FF00E4;
+}
+
+//email signup
+element.style {
+    color: #FF00E4;
+}
+
 body {
     font-family: 'Courier New';
     margin: 0;
 }
-.main-header {
+.navbar-brand {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
