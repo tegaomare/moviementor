@@ -11,22 +11,44 @@ element.style {
 //email-login
 element.style {
     color: #FF00E4;
+    font-family: courier new;
+    font-size: 25;
 }
 
 //password login
 element.style {
     color: #FF00E4;
+    font-family: courier new;
+    font-size: 25;
 }
 
 //username signup
 
 element.style {
     color: #FF00E4;
+    font-family: courier new;
+    font-size: 25;
 }
 
 //email signup
 element.style {
     color: #FF00E4;
+    font-family: courier new;
+    font-size: 25;
+}
+
+//password signup
+element.style {
+    color: #FF00E4;
+    font-family: courier new;
+    font-size: 25;
+}
+
+//Cybord Raptors
+element.style {
+    color: #FF00E4;
+    font-family: courier new;
+    font-size: 30;
 }
 
 body {
