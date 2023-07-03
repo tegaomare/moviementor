@@ -2,6 +2,7 @@ const router = require("express").Router();
 const { Movie } = require("../models");
 const withAuth = require("../utils/auth.js");
 
+
 router.get("/", withAuth, async (req, res) => {
   // withAuth redirects to login page if we are not logged in
   const dbMovieData = await Movie.findAll();
