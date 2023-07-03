@@ -1,4 +1,17 @@
-<!doctype html>
-<html lang="en">
-  ...
-</html>
+:root {
+    --main-bg-color: #000000;
+    --main-border-color: ##FF00E4;
+
+}
+
+body {
+    font-family: 'Courier New';
+    margin: 0;
+}
+.main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: ;
+}
