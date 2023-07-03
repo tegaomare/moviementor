@@ -31,6 +31,9 @@ Movie.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
+    // I recommend creating a Genre model, which will contain the genre id and the genre name
+    // Refer to module 13: Product model, ProductTag, Tag model
+    // Create an association between the Movie model and the Genre Model
   },
   {
     sequelize,
