@@ -22,3 +22,14 @@ body {
 .container {
     display: flex;
 }
+
+.sub-container {
+    display: block;
+    margin: 5px;
+    padding: 15 px;
+    background: var(--main-bg-color)
+    color: #FF00E4;
+    width: 25%;
+    border: #FF00E4;
+    text-align: center;
+}
