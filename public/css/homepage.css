@@ -27,9 +27,9 @@ body {
     display: block;
     margin: 5px;
     padding: 15 px;
-    background: var(--main-bg-color)
+    background: var(--main-bg-color);
     color: #FF00E4;
     width: 25%;
-    border: #FF00E4;
+    border: var(--main-border-color) 5px solid;
     text-align: center;
 }
