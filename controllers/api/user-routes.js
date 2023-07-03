@@ -40,6 +40,7 @@ router.post("/", async (req, res) => {
     
     req.session.save(() => {
       req.session.loggedIn = true;
+      req.session.userId = userData.id; // It is nice to save user id in the session in case you need to tie that user to something they create
     
     res.status(200).json(userData)
     });

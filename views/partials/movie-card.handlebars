@@ -1,14 +1,15 @@
          <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="{{movie.poster}}">
+                <img class="card-img-top" src="https://image.tmdb.org/t/p/original{{poster}}">
+                {{!-- Images are saved by their URL, we have to put in the beginning of the link to path to the poster --}}
                 <div class="card-body">
-                  <p class="card-text">{{movie.title}}</p>
+                  <p class="card-text">{{title}}</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Add to favorites +</button>
                     </div>
-                    <small class="text-muted">{{release.date}}</small>
+                    <small class="text-muted">{{release_date}}</small>
                   </div>
                 </div>
               </div>
