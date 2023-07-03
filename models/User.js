@@ -32,6 +32,9 @@ User.init(
         len: [8],
       },
     },
+    // USER hasMany MOVIES
+    // In the favorites column for the user, save the movie ID
+    // In order to add the add favorites feature, create a favorites column in the user, whenever the user clicks the button, it should update the user and change the favorites column to include the new movie
   },
   {
     hooks: {

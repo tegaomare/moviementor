@@ -6,6 +6,8 @@ const movieData = require("./movieData.json");
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
+  // Typically in a seed file, you will delete all of the previous data and overwrite with new data
+  await User.de
 
   const users = await User.bulkCreate(userData, {
     individualHooks: true,

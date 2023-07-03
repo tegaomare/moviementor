@@ -1,12 +1,14 @@
 const router = require("express").Router();
 const { Movie } = require("../models");
-const withAuth = require("../utils/auth");
+const withAuth = require("../utils/auth.js");
+
 
 router.get("/", withAuth, async (req, res) => {
   // withAuth redirects to login page if we are not logged in
   const dbMovieData = await Movie.findAll();
 
   const movies = dbMovieData.map((movie) => movie.get({ plain: true }));
+  // const movieUrl =  "https://api.themoviedb.org/3/genre/movie/list";
   const movieUrl =
     "https://api.themoviedb.org/3/trending/movie/week?language=en-US";
   const options = {
@@ -22,10 +24,11 @@ router.get("/", withAuth, async (req, res) => {
   const apiResults = await fetch(movieUrl, options)
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       return data;
     });
-    const movieApi = apiResults.results;
-    console.log(movieApi);
+  // const movieApi = apiResults.results;
+  // console.log(movieApi);
 
   res.render("homepage", {
     movies,
@@ -35,6 +38,17 @@ router.get("/", withAuth, async (req, res) => {
 
 router.get("/login", async (req, res) => {
   res.render("login");
+});
+
+router.get("/movies/:id", withAuth, async (req, res) => {
+  const movieData = await Movie.findByPk(req.params.id);
+  const movie = movieData.get({ plain: true });
+  console.log(movie);
+
+  res.render("movie-details", {
+    movie,
+    loggedIn: req.session.loggedIn,
+  });
 });
 
 module.exports = router;
