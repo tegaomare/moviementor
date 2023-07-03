@@ -1,6 +1,6 @@
 :root {
-    --main-bg-color: #000000;
-    --main-border-color: ##FF00E4;
+    --main-bg-color: #212529;
+    --main-border-color: #FF00E4;
 
 }
 
@@ -13,5 +13,12 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: ;
+    padding: 10px;
+    background: var(--main-bg-color);
+    color: #FF00E4;
+    margin-bottom: 25px;
+    height: 250 px;
+}
+.container {
+    display: flex;
 }
