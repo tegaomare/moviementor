@@ -1,8 +1,26 @@
 :root {
-    --main-bg-color: #212529;
+    --main-bg-color: #000000;
     --main-border-color: #FF00E4;
 
 }
+
+//main movie description background
+element.style {
+    background: #000000;
+}
+
+//nav ::bar
+<div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+                <li class="nav-item">
+                  <button class="nav-link" id="logout">Logout</button>
+                </li>
+            </ul>
+          </div>
+
 
 body {
     font-family: 'Courier New';

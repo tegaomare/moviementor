@@ -1,11 +1,11 @@
 :root {
-    --main-bg-color: #212529;
+    --main-bg-color: #000000;
     --main-border-color: #FF00E4;
 
 }
 
 element.style {
-    background-color: #212529;
+    background-color: #000000;
 }
 
 //email-login
