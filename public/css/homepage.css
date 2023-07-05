@@ -7,6 +7,7 @@
 }
 .nav-item {
   font-size: large;
+  
 }
 body {
   background-color: white;
@@ -23,10 +24,12 @@ body {
   background: var(--main-bg-color);
   color: #ff00e4;
   margin-bottom: 25px;
+ 
   height: 250 px;
 }
 .container {
   display: flex;
+  padding: 25px;
 }
 
 .sub-container {
@@ -44,4 +47,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
