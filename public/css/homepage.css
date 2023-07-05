@@ -3,9 +3,11 @@
     --main-border-color: #FF00E4;
 
 }
-
+.navbar{
+    background-color: #000000;
+}
 body {
-    background-color:black;
+    background-color:#FF00E4;
     font-family: 'Courier New';
     margin: 0;
 }
