@@ -4,86 +4,8 @@
 
 }
 
-element.style {
-    background-color: #000000;
-}
-
-//email-login
-element.style {
-    color: #FF00E4;
-    font-family: courier new;
-    font-size: 25;
-}
-<label for="email-login" style="
-    color: FF00E4;
-">Email:</label>
-
-//password login
-element.style {
-    color: #FF00E4;
-    font-family: courier new;
-    font-size: 25;
-}
-<label for="password-login" style="
-    color: #FF00E4;
-">Password:</label>
-
-//username signup
-
-element.style {
-    color: #FF00E4;
-    font-family: courier new;
-    font-size: 25;
-}
-<label for="username-signup">Username:</label>
-
-//email signup
-element.style {
-    color: #FF00E4;
-    font-family: courier new;
-    font-size: 25;
-}
-<label for="email-signup" style="
-    color: #FF00E4;
-">Email:</label>
-
-//password signup
-element.style {
-    color: #FF00E4;
-    font-family: courier new;
-    font-size: 25;
-}
-<label for="password-signup" style="
-    color: #FF00E4;
-    font-family: courier new;
-    font-size: 25;
-">Password:</label>
-
-//Cybord Raptors
-element.style {
-    color: #FF00E4;
-    font-family: courier new;
-    font-size: 30;
-}
-<p class="text-center" style="
-    color: #FF00E4;
-    font-family: courier new;
-    font-size: 30;
-">© Cyborg Raptors. All rights reserved.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
 body {
+    background-color:black;
     font-family: 'Courier New';
     margin: 0;
 }
