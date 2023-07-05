@@ -1,17 +1,19 @@
-         <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
+            <div class="col-md-4">
+              <div class="card mb-4 " id="card-border">
+                <div class="d-flex">
                 <img class="card-img-top" src="https://image.tmdb.org/t/p/original{{movie.poster}}">
                 {{!-- Images are saved by their URL, we have to put in the beginning of the link to path to the poster --}}
                 <div class="card-body">
-                  <p class="card-text">{{movie.title}}</p>
-                  <bold class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                        {{movie.description}}
+                  <h1 class="card-text">{{movie.title}}</h1>
+                
+                    <div class="btn-group" id="movdesc">
+                        <p>{{movie.description}}</p>
                       {{!-- <a class="btn btn-sm btn-outline-secondary" href="/movies/{{id}}">View</a> --}}
                       {{!-- <button type="button" class="btn btn-sm btn-outline-secondary">Add to favorites +</button> --}}
                     </div>
                     <small class="text-muted">{{movie.release_date}}</small>
-                  </div>
+                 
+                </div>
                 </div>
               </div>
             </div>

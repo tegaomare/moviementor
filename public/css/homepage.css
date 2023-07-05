@@ -6,9 +6,9 @@
   background-color: #000000;
 }
 .nav-item {
-  font-size: large;
-  
+  font-size: xx-large;
 }
+
 body {
   background-color: white;
   font-family: "Courier New";
@@ -47,5 +47,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  margin-top: 10px;
+}
+
+.card-img-top{
+    max-width: 400px;
+    max-height: 557px;
+}
+
+
+#movdesc {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body{
+    width: 1000px;
+}
+
+.d-flex{
+    width: 1200px;
+}
+
+#card-border{
+    width: 300px;
 }
