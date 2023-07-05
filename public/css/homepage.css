@@ -6,11 +6,15 @@
 .navbar{
     background-color: #000000;
 }
+.nav-item{
+    font-size:large;
+}
 body {
     background-color:white;
     font-family: 'Courier New';
     margin: 0;
 }
+
 .navbar-brand {
     display: flex;
     flex-direction: column;
