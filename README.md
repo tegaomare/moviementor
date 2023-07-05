@@ -21,3 +21,19 @@ MovieMentor is a powerful movie app designed to enhance your movie-watching expe
 ## License
 
 MovieMentor is licensed under the MIT License.
+
+## App link
+
+https://project-211-88db9fc198e3.herokuapp.com/
+
+## Credits
+
+sefenydiaz
+
+daniellecavallo
+
+laurenmiller389
+
+DanielG808
+
+tegaomare
