@@ -1,46 +1,48 @@
 :root {
-    --main-bg-color: #000000;
-    --main-border-color: #FF00E4;
+  --main-bg-color: #000000;
+  --main-border-color: #ff00e4;
+}
+.navbar {
+  background-color: #000000;
+}
+.nav-item {
+  font-size: xx-large;
+}
 
-}
-.navbar{
-    background-color: #000000;
-}
-.nav-link{
-    font-size: xx-large;
-    color:lightpink;
-}
-.nav-link:hover{
-    color: whitesmoke;
-}
 body {
-    background-color:white;
-    font-family: 'Courier New';
-    margin: 0;
+  background-color: white;
+  font-family: "Courier New";
+  margin: 0;
 }
 
 .navbar-brand {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background: var(--main-bg-color);
-    color: #FF00E4;
-    margin-bottom: 25px;
-    height: 250 px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: var(--main-bg-color);
+  color: #ff00e4;
+  margin-bottom: 25px;
+  height: 250 px;
 }
 .container {
-    display: flex;
+  display: flex;
 }
 
 .sub-container {
-    display: block;
-    margin: 5px;
-    padding: 15 px;
-    background: var(--main-bg-color);
-    color: #FF00E4;
-    width: 25%;
-    border: var(--main-border-color) 5px solid;
-    text-align: center;
+  display: block;
+  margin: 5px;
+  padding: 15 px;
+  background: var(--main-bg-color);
+  color: #ff00e4;
+  width: 25%;
+  border: var(--main-border-color) 5px solid;
+  text-align: center;
+}
+
+#desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
