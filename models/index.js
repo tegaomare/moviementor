@@ -8,7 +8,7 @@ const UserMovies = require('./UserMovies');
 //movie belongs to many users - USERS MOVIES
 //make usersMovies model that has two foreign keys in it and go "through"
 
-
+// can use this to make favorites
 Movie.belongsToMany(User, {
   foreignKey: 'movie_id',
   through: UserMovies
