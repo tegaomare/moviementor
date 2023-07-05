@@ -9,3 +9,11 @@ MovieMentor is a powerful movie app designed to enhance your movie-watching expe
 ## Feature
 
 . Discover New Movies: Moviementor provides a comprehensive database of movies from various genres, including action, comedy, drama, romance, and more. Explore a vast collection of films to find your next favorite.
+
+## Getting Started
+
+1. Installation: click on the webpage link.
+
+2. Sign Up or Log In: Create a new account or log in using your existing credentials to unlock the full potential of Moviementor.
+
+3. Explore Movies: Start discovering new movies by browsing through the vast collection
