@@ -6,8 +6,12 @@
 .navbar{
     background-color: #000000;
 }
-.nav-item{
-    font-size:large;
+.nav-link{
+    font-size: xx-large;
+    color:lightpink;
+}
+.nav-link:hover{
+    color: whitesmoke;
 }
 body {
     background-color:white;
