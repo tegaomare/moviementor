@@ -7,12 +7,14 @@ const UserMovies = require('./UserMovies');
 // MANY TO MANY
 //movie belongs to many users - USERS MOVIES
 //make usersMovies model that has two foreign keys in it and go "through"
-Movie.hasMany(User, {
+
+
+Movie.belongsToMany(User, {
   foreignKey: 'movie_id',
   through: UserMovies
 });
 
-User.hasMany(Movie, {
+User.belongsToMany(Movie, {
   foreignKey: 'user_id',
   through: UserMovies
 })
