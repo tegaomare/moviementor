@@ -55,28 +55,31 @@ router.post("/", async (req, res) => {
 // POST /api/users/login
 router.post("/login", async (req, res) => {
   try {
+    
     const userData = await User.findOne({ where: { email: req.body.email } });
+    
     if (!userData) {
       res
         .status(400)
         .json({ message: "Incorrect email or password, please try again." });
       return;
     }
-
+    
     const validPassword = await userData.checkPassword(req.body.password);
     if (!validPassword) {
       res
         .status(400)
         .json({ message: "Incorrect email or password, please try again." });
     }
+    console.log(req.session)
     req.session.save(() => {
       req.session.loggedIn = true;
-      res.session.userId = userData.id;
+      req.session.userId = userData.id;
 
     res.status(200).json({ message: "login!!" });
   });
  } catch (error) {
-    res.status(400).json(error);
+    res.status(500).json(error);
   }
 });
 
