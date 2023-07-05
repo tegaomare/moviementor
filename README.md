@@ -17,3 +17,7 @@ MovieMentor is a powerful movie app designed to enhance your movie-watching expe
 2. Sign Up or Log In: Create a new account or log in using your existing credentials to unlock the full potential of Moviementor.
 
 3. Explore Movies: Start discovering new movies by browsing through the vast collection
+
+## License
+
+MovieMentor is licensed under the MIT License.
