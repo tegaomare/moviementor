@@ -15,6 +15,8 @@ router.get("/", withAuth, async (req, res) => {
     method: "GET",
     headers: {
       accept: "application/json",
+      //below should be moved into env file
+      // also change the key 
       Authorization:
         "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2ZDc5MTUzNDJkYWFlMjk5Mzc2YzQ1ZDQ5ZDRiOWEyZSIsInN1YiI6IjY0OWYwNTMzODU4Njc4MDE0ZTRlMmU2MSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.QlZ2f_ywck5SPhwW5tro-NbcevyPGotjZAgiN49zuE8",
     },
@@ -22,14 +24,15 @@ router.get("/", withAuth, async (req, res) => {
   // We run the fetch here because the benefit of the API is that we can call and fetch the data from the API instead of having to use our own DB
 
   const apiResults = await fetch(movieUrl, options)
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-      return data;
-    });
+    const apiData = await apiResults.json()
+      console.log(apiData);
+      
+   
   // const movieApi = apiResults.results;
   // console.log(movieApi);
 
+  // can pass apiData into render
+  //chronjobs
   res.render("homepage", {
     movies,
     loggedIn: req.session.loggedIn,
