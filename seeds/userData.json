@@ -1,18 +1,28 @@
 [
     {
-      "username": "Sal",
-      "email": "sal@hotmail.com",
-      "password": "password12345"
+      "username": "Sef",
+      "email": "sefenyd@gmail.com",
+      "password": "cyborgraptors"
     },
     {
-      "username": "Lernantino",
-      "email": "lernantino@gmail.com",
-      "password": "password12345"
+      "username": "Dan",
+      "email": "dangray@hotmail.com",
+      "password": "cyborgraptor4ever"
     },
     {
-      "username": "Amiko",
-      "email": "amiko2k20@aol.com",
-      "password": "password12345"
+      "username": "Lauren",
+      "email": "laurenmiller@aol.com",
+      "password": "cyborgraptor4lyfe"
+    },
+    {
+      "username": "Tega",
+      "email": "tegasmoak@yahoo.com",
+      "password": "cyborgraptorsaremylyfe"
+    },
+    {
+      "username": "Danielle",
+      "email": "daniellecavallo@microsoft.com",
+      "password": "dinonuggets"
     }
   ]
   
